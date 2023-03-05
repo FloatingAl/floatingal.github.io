@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "./static/css/main.237df261.css",
+    "main.js": "./static/js/main.06e0530c.js",
+    "static/js/787.1ed0c42c.chunk.js": "./static/js/787.1ed0c42c.chunk.js",
+    "static/media/faceprofile.jpg": "./static/media/faceprofile.08749ac8204a41b8c091.jpg",
+    "static/media/lion-logo.svg": "./static/media/lion-logo.bbf3a47e6bae3cb379142502aed2b76f.svg",
+    "static/media/logo.svg": "./static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/github.svg": "./static/media/github.71b40ed975b5389d989d94c316a17fe1.svg",
+    "static/media/linkedin.svg": "./static/media/linkedin.5bc81bca256f0eb177bb30afd1f1564a.svg",
+    "index.html": "./index.html",
+    "main.237df261.css.map": "./static/css/main.237df261.css.map",
+    "main.06e0530c.js.map": "./static/js/main.06e0530c.js.map",
+    "787.1ed0c42c.chunk.js.map": "./static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.237df261.css",
+    "static/js/main.06e0530c.js"
+  ]
+}
