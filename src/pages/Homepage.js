@@ -7,7 +7,6 @@ import linkedin from '../images/linkedin.svg'
 function Homepage() {
   return (
     <div>
-        <Navbar/>
         <div className="flex flex-wrap flex-col container grid items-center justify-between p-6 m-auto font-mono">
           <h1 className="text-start text-5xl">about</h1>
           <div className="flex flex-wrap flex-row container items-center content-center justify-center p-6">

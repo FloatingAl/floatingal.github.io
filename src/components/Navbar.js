@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState, useEffect} from 'react'
 import lion from '../images/lion-logo.svg'
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   const [select, setSelect] = useState({
@@ -47,30 +48,30 @@ function Navbar() {
         <div className="flex flex-wrap items-center justify-between space-x-5 mx-auto">
             <img src={lion} className=" inline-block items-center h-14 w-14 mx-auto"></img>
             <div className="flex flex-wrap items-center justify-between space-x-6 mx-auto">
-                {select.home ? (<a href='#' onClick={()=>handleSelect('home')}className="block rounded px-2 py-1 bg-bright-red text-white mx-auto">
+                {select.home ? (<Link to='/' onClick={()=>handleSelect('home')}className="block rounded px-2 py-1 bg-bright-red text-white mx-auto">
                 about
-                </a>) 
+                </Link>) 
                 : 
-                (<a href='#'  onClick={()=>handleSelect('home')} className="block rounded px-2 py-1 hover:text-white hover:bg-bright-red mx-auto">
+                (<Link to="/"  onClick={()=>handleSelect('home')} className="block rounded px-2 py-1 hover:text-white hover:bg-bright-red mx-auto">
                 about
-                </a>)}
+                </Link>)}
 
-                {select.technologies ? (<a href='#' onClick={()=>handleSelect('technologies')} className="block rounded px-2 py-1 text-white bg-bright-red mx-auto">
+                {select.technologies ? (<Link to='/tech' onClick={()=>handleSelect('technologies')} className="block rounded px-2 py-1 text-white bg-bright-red mx-auto">
                 technologies
-                </a>) 
+                </Link>) 
                 :  
-                (<a href='#'  onClick={()=>handleSelect('technologies')} className="block rounded px-2 py-1 hover:text-white hover:bg-bright-red mx-auto">
+                (<Link to='/tech'  onClick={()=>handleSelect('technologies')} className="block rounded px-2 py-1 hover:text-white hover:bg-bright-red mx-auto">
                 technologies
-                </a>) 
+                </Link>) 
                 }
 
-                {select.projects ? <a href='#' onClick={()=>handleSelect('projects')} className="block rounded px-2 py-1 text-white bg-bright-red mx-auto" >
+                {select.projects ? <Link to='project' onClick={()=>handleSelect('projects')} className="block rounded px-2 py-1 text-white bg-bright-red mx-auto" >
                 projects
-                </a>
+                </Link>
                 :
-                <a href='#' onClick={()=>handleSelect('projects')} className="block rounded px-2 py-1 hover:text-white hover:bg-bright-red mx-auto" >
+                <Link to='project' onClick={()=>handleSelect('projects')} className="block rounded px-2 py-1 hover:text-white hover:bg-bright-red mx-auto" >
                 projects
-                </a>}
+                </Link>}
             </div>
             <div>
                 <a>
