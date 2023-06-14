@@ -22,4 +22,6 @@ code {
 
 #face{
   clip-path: circle();
+  border-radius: 50%;
+  background: -webkit-linear-gradient(135deg, #c85e4c, #f5e102e2);
 }

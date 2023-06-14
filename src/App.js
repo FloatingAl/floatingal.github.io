@@ -3,19 +3,17 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Homepage from './pages/Homepage';
 import Techpage from './pages/Techpage';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Projectpage from './pages/Projectpage';
+import { AnimatePresence } from 'framer-motion';
+import AnimatedRoutes from './components/AnimatedRoutes';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter forceRefresh={true}>
     <div className="App">
       <Navbar/>
-      <Routes>
-        <Route path='/' element={<Homepage/>}/>
-        <Route path='/tech' element={<Techpage/>}/>
-        <Route path='/project' element={<Projectpage/>}/>
-      </Routes> 
+      <AnimatedRoutes/>
     </div>
     </BrowserRouter>
   );
