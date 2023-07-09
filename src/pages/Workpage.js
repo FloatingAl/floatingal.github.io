@@ -26,10 +26,10 @@ export default class Workpage extends Component {
       //exit={{opacity: 0}}
       transition={{ duration: 0.75, ease: "easeInOut"}}
     >
-      <div className='m-auto items-center container justify-center place-content-center p-6 font-mono space-y-6 overflow-hidden overflow-y-auto'>
+      <div className='m-auto items-center container justify-center place-content-center p-6 font-mono space-y-6 overflow-hidden md:overflow-x-auto sm:overflow-y-auto'>
         <h1 className="flex m-auto text-start text-6xl">Work Experience</h1>
-        <h5 className="flex m-auto text-start text-xl">(Scroll Down & click on card for more information)</h5>
-        <div className="flex flex-col m-auto space-y-16">
+        <h5 className="flex m-auto text-start text-xl">(Scroll & click on card for more information)</h5>
+        <div className="flex m-auto lg:flex-row md:flex-row sm:flex-col md:space-x-16 md:space-y-0 sm:space-y-16">
           <div className=''>
             <Card
             logo={<Baesystemlogo/>}

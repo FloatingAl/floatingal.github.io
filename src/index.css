@@ -12,7 +12,7 @@ body {
 }
 
 html {
-  background-color: beige;
+  background-color: #F5F5F5;
 }
 
 code {
@@ -23,5 +23,5 @@ code {
 #face{
   clip-path: circle();
   border-radius: 50%;
-  background: -webkit-linear-gradient(135deg, #c85e4c, #f5e102e2);
+  background: -webkit-linear-gradient(135deg, #7510f7, #F5F5F5);
 }

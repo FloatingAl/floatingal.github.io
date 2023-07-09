@@ -38,20 +38,20 @@ export default function Card({logo, company, duration, title, technologies, bull
 
   return (
   <div style={{perspective : '1000px' }}className={'w-97 h-97 m-auto'}>
-    <div style={{transform: isFlipped ? 'rotateY(180deg)' : ''}} className={'w-full h-full rounded-xl relative cursor-pointer transition-all duration-1000 [transform-style:preserve-3d]'} onClick={handleclick}>
-      <div className={'flex flex-col space-y-5 absolute w-full h-full rounded-xl bg-amber-500 items-center justify-center [backface-visibility:hidden] [-webkit-backface-visibility: hidden] overflow-hidden'}>
+    <div style={{transform: isFlipped ? 'rotateY(180deg)' : ''}} className={'w-full h-full rounded-xl relative cursor-pointer transition-all duration-1000 shadow-xl [transform-style:preserve-3d]'} onClick={handleclick}>
+      <div className={'flex flex-col space-y-5 absolute w-full h-full rounded-xl bg-purp items-center justify-center [backface-visibility:hidden] [-webkit-backface-visibility: hidden] overflow-hidden'}>
         <div className='flex flex-col space-y-5'>
           <div className='p-6 bg-white rounded-full shadow-2xl '>
             {logo}
           </div>
           <div className='p-3 '>
-            <div className='text-xl font-black p-3'>
+            <div className='text-xl font-black text-smokey-white p-3'>
               <h1>{company} </h1>
             </div>
-            <div className='text-m font-medium p-3'>
+            <div className='text-m font-medium text-smokey-white p-3'>
               <p>{duration}</p>
             </div>
-            <div className='text-m font-medium p-3'>
+            <div className='text-m font-medium text-smokey-white p-3'>
               <p>{title}</p>
             </div>
           </div>
@@ -59,7 +59,7 @@ export default function Card({logo, company, duration, title, technologies, bull
       </div>
       <div className={'flex overflow-y-auto w-full h-full rounded-xl bg-smokey-white [backface-visibility:hidden] [-webkit-backface-visibility: hidden] overflow-hidden [transform:rotateY(180deg)]'}>
         <div className={'w-full h-full items-center justify-center'}>
-          <div className={'bg-amber-500 relative'}>
+          <div className={'bg-purp relative'}>
             <div className='pt-6 m-auto'>
               <p className='p-3 font-bold shadow-2xl inline-block bg-white rounded-full'>Technologies</p>
             </div>

@@ -12,7 +12,7 @@ module.exports = {
         'biege': '#F5F5DC',
         'bright-red': '#c85e4c',
         'smokey-white':'#F5F5F5',
-        'mattpurple':'#7510f7',
+        'purp':'#7510f7',
       },
       width: {
         97: '500px'
