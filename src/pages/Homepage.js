@@ -18,16 +18,9 @@ function Homepage() {
             </div>
             <div className="mx-auto sm:pt-8 space-y-8 xl:basis-1/2 lg:basis-full md:basis-full sm:basis-full flex flex-col text-justify">
               <div className='rounded-lg bg-smokey-white shadow-2xl p-9 border-2 border-black text-black'>
-                <p className=""> <h2 className="text-2xl">Hello my name is <h1 className="text-5xl">Albara Mehene</h1></h2>
-                  Currently a full stack software engineer working at BAE systems. Experienced working in mobile & web, back-end, 
-                  & application development. Skilled in C++, React, Javascript, Python, Automation, Databases, and Embedded systems. 
-                  Currently interested in Full stack development, cloud software development, and embedded development.
-                  Currently a full stack software engineer working at BAE systems. Experienced working in mobile & web, back-end, 
-                  & application development. Skilled in C++, React, Javascript, Python, Automation, Databases, and Embedded systems. 
-                  Currently interested in Full stack development, cloud software development, and embedded development.
-                  Currently a full stack software engineer working at BAE systems. Experienced working in mobile & web, back-end, 
-                  & application development. Skilled in C++, React, Javascript, Python, Automation, Databases, and Embedded systems. 
-                  Currently interested in Full stack development, cloud software development, and embedded development.</p>
+                <p className="text-xl"> Hello my name is <h1 className="text-red-500 text-4xl">Albara Mehene</h1>
+                  I'm currently a full stack software engineer working at BAE systems. Experienced working in mobile & web, back-end, 
+                  & application development. Skilled in C++, React, Javascript, Python, Automation, Databases, and Embedded systems. </p>
               </div>
               <div className="flex flex-wrap flex-row space-x-12 pt-6 mx-auto items-center content-center justify-center text-center">
                 <div className="flex border-2 p-1 bg-smokey-white shadow-2xl border-black rounded-full group">
