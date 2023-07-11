@@ -45,19 +45,19 @@ export default function Card({logo, company, duration, title, technologies, bull
             {logo}
           </div>
           <div className='p-3 '>
-            <div className='text-xl font-black text-smokey-white p-3'>
+            <div className='text-xl font-black text-white p-3'>
               <h1>{company} </h1>
             </div>
-            <div className='text-m font-medium text-smokey-white p-3'>
+            <div className='text-m font-medium text-white p-3'>
               <p>{duration}</p>
             </div>
-            <div className='text-m font-medium text-smokey-white p-3'>
+            <div className='text-m font-medium text-white p-3'>
               <p>{title}</p>
             </div>
           </div>
         </div>
       </div>
-      <div className={'flex overflow-y-auto w-full h-full rounded-xl bg-smokey-white [backface-visibility:hidden] [-webkit-backface-visibility: hidden] overflow-hidden [transform:rotateY(180deg)]'}>
+      <div className={'flex overflow-y-auto w-full h-full rounded-xl bg-white [backface-visibility:hidden] [-webkit-backface-visibility: hidden] overflow-hidden [transform:rotateY(180deg)]'}>
         <div className={'w-full h-full items-center justify-center'}>
           <div className={'bg-purp relative'}>
             <div className='pt-6 m-auto'>

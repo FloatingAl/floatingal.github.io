@@ -12,7 +12,8 @@ body {
 }
 
 html {
-  background-color: #F5F5F5;
+  background-image: url("./images/confetti-doodles.svg");
+  background-size: 100%;
 }
 
 code {

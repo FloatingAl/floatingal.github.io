@@ -26,15 +26,17 @@ export default class Workpage extends Component {
       //exit={{opacity: 0}}
       transition={{ duration: 0.75, ease: "easeInOut"}}
     >
-      <div className='m-auto items-center container justify-center place-content-center p-6 font-mono space-y-6 overflow-hidden md:overflow-x-auto sm:overflow-y-auto'>
-        <h1 className="flex m-auto text-start text-6xl">Work Experience</h1>
-        <h5 className="flex m-auto text-start text-xl">(Scroll & click on card for more information)</h5>
-        <div className="flex m-auto lg:flex-row md:flex-row sm:flex-col md:space-x-16 md:space-y-0 sm:space-y-16">
+      <div className='items-center justify-center place-content-center p-6 font-mono space-y-6'>
+        <div className='m-auto container'>
+          <h1 className="flex m-auto text-start text-5xl">Work Experience</h1>
+          <h5 className="flex m-auto text-start text-xl">(Scroll & click on card for more information)</h5>
+        </div>
+        <div className="flex lg:flex-row md:flex-col sm:flex-col max-[640px]:flex-col m-auto w-full items-center justify-center p-12 overflow-hidden md:overflow-y-auto sm:overflow-y-auto lg:space-x-16 lg:space-y-0 md:space-y-16 sm:space-y-16 max-[640px]:space-y-16">
           <div className=''>
             <Card
             logo={<Baesystemlogo/>}
             company="BAE Systems"
-            duration="Januray 2022 - Present"
+            duration="January 2022 - Present"
             title="Software Engineer II"
             technologies={{ "C++": <Cpluspluslogo/>, "Python": <Pythonlogo/>, "Docker": <Dockerlogo/>, "Postgressql": <Postgresqllogo/>, "React": <Reactlogo/>, "Javascript": <Javascriptlogo/>}}
             bullets={[
@@ -66,7 +68,7 @@ export default class Workpage extends Component {
             <Card
             logo={<Kronoslogo/>}
             company="Kronos Inc."
-            duration="Januraru 2017 - June 2017"
+            duration="January 2017 - June 2017"
             title="Software Engineer"
             technologies={{ "Java": <Javalogo/>, "Git": <Gitlogo/>, "Junit": <Junitlogo/>, "Javascript": <Javascriptlogo/>}}
             bullets={[

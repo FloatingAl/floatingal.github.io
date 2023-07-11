@@ -8,7 +8,9 @@ function Projectpage() {
     animate={{ opacity: 1 }}
     //exit={{opacity: 0}}
     transition={{ duration: 0.75, ease: "easeInOut"}}>
-    Projectpage
+    <div>
+      Projectpage
+    </div>
   </motion.div>
   )
 }
