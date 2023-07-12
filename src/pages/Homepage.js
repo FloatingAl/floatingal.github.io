@@ -28,7 +28,9 @@ function Homepage() {
       transition={{ duration: 0.75, ease: "easeInOut"}}
     >
         <div className="flex flex-wrap flex-col container items-center justify-between p-6 m-auto font-mono">
-          <h1 className="flex text-start text-5xl">about</h1>
+          <div className="m-auto container text-start items-start text-5xl"> 
+            <h1>about</h1>
+          </div>
           <div className="flex flex-wrap flex-row items-center content-center justify-center p-6">
             <div className="flex m-auto 2xl:basis-1/3 xl:basis-2/5 lg:basis-1/2 md:basis-2/3 sm:basis-9/12 sm:shrink-0 md:shrink-0 lg:shrink-0 pr-12">
               <img src={face} id='face' className="p-4 border-2 border-black" ></img>
