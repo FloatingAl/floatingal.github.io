@@ -19,6 +19,26 @@ import { ReactComponent as Junitlogo } from '../images/junit.svg'
 
 export default class Workpage extends Component {
   render() {
+    const container = {
+      hidden: { opacity: 1, scale: 0 },
+      visible: {
+        opacity: 1,
+        scale: 1,
+        transition: {
+          delayChildren: 0.3,
+          staggerChildren: 0.2
+        }
+      }
+    };
+    
+    const item = {
+      hidden: { y: 20, opacity: 0 },
+      visible: {
+        y: 0,
+        opacity: 1
+      }
+    };
+
     return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -28,11 +48,19 @@ export default class Workpage extends Component {
     >
       <div className='items-center justify-center place-content-center p-6 font-mono space-y-6'>
         <div className='m-auto container'>
-          <h1 className="flex m-auto text-start text-5xl">Work Experience</h1>
+          <h1 className="flex m-auto text-start text-5xl">work experience</h1>
           <h5 className="flex m-auto text-start text-xl">(Scroll & click on card for more information)</h5>
         </div>
-        <div className="flex lg:flex-row md:flex-col sm:flex-col max-[640px]:flex-col m-auto w-full items-center justify-center p-12 overflow-hidden md:overflow-y-auto sm:overflow-y-auto lg:space-x-16 lg:space-y-0 md:space-y-16 sm:space-y-16 max-[640px]:space-y-16">
-          <div className=''>
+        <motion.div 
+          className="flex lg:flex-row md:flex-col sm:flex-col max-[640px]:flex-col m-auto items-center self-center p-12 overflow-hidden overflow-x-auto overflow-y-auto lg:space-x-16 lg:space-y-0 md:space-y-16 sm:space-y-16 max-[640px]:space-y-16"
+          variants={container}
+          initial="hidden"
+          animate="visible"
+          >
+          <motion.div 
+          className=''
+          variants={item}
+          >
             <Card
             logo={<Baesystemlogo/>}
             company="BAE Systems"
@@ -47,8 +75,10 @@ export default class Workpage extends Component {
               "Lead & migrated CI/CD environment from BitBucket to Gitlabs to gain access to better tools and  functionality such as Docker."
             ]}
             />
-          </div>
-          <div className=''>
+          </motion.div>
+          <motion.div 
+          className=''
+          variants={item}>
             <Card
             logo={<Raytehonlogo/>}
             company="Raytheon"
@@ -63,8 +93,10 @@ export default class Workpage extends Component {
               "Refactored and refined legacy code in support of a migrating effort to newer technologies for the team."
             ]}
             />
-          </div>
-          <div className=''>
+          </motion.div>
+          <motion.div 
+          className=''
+          variants={item}>
             <Card
             logo={<Kronoslogo/>}
             company="Kronos Inc."
@@ -77,8 +109,8 @@ export default class Workpage extends Component {
               "Handled a large volume of tickets in a comprehensive and timely manner."
             ]}
             />
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
         
       </div>
     </motion.div>

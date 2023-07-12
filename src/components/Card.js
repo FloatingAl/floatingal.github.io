@@ -19,11 +19,11 @@ export default function Card({logo, company, duration, title, technologies, bull
   const renderLogo = () => {
     return Object.entries(technologies).map(([key, value]) => (
         <div className='flex flex-col space-y-2'>
-          <div className="shadow-2xl p-3 rounded-full bg-white m-auto">
+          <div key={Math.random()} className="shadow-2xl p-3 rounded-full bg-white m-auto">
             {value}
           </div>
-          <div className='shadow-2xl rounded-full bg-white text-xs p-1 '>
-              <span>{key}</span>
+          <div key={Math.random()} className='shadow-2xl rounded-full bg-white text-xs p-1 '>
+              <span key={Math.random()}>{key}</span>
           </div>
         </div>
 
@@ -32,7 +32,7 @@ export default function Card({logo, company, duration, title, technologies, bull
 
   const renderBullet = () => {
     return bullets.map((item,index) => (
-      <li>{item}</li>
+      <li key={Math.random()}>{item}</li>
     ));
   };
 

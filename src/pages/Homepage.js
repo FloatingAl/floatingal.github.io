@@ -27,17 +27,17 @@ function Homepage() {
       //exit={{opacity: 0}}
       transition={{ duration: 0.75, ease: "easeInOut"}}
     >
-        <div className="flex flex-wrap flex-col container grid items-center justify-between p-6 m-auto font-mono">
+        <div className="flex flex-wrap flex-col container items-center justify-between p-6 m-auto font-mono">
           <h1 className="flex text-start text-5xl">about</h1>
           <div className="flex flex-wrap flex-row items-center content-center justify-center p-6">
-            <div className="flex m-auto 2xl:basis-1/3 xl:basis-1/2 lg:basis-2/3 md:basis-2/3 sm:basis-9/12 sm:shrink-0 md:shrink-0 lg:shrink-0 pr-12">
+            <div className="flex m-auto 2xl:basis-1/3 xl:basis-2/5 lg:basis-1/2 md:basis-2/3 sm:basis-9/12 sm:shrink-0 md:shrink-0 lg:shrink-0 pr-12">
               <img src={face} id='face' className="p-4 border-2 border-black" ></img>
             </div>
             <div className="mx-auto sm:pt-8 space-y-8 xl:basis-1/2 lg:basis-full md:basis-full sm:basis-full flex flex-col text-justify">
               <div className='rounded-lg bg-white shadow-2xl p-9 text-black'>
-                <p className="text-xl text-center"> Hello my name is <h1 className="text-purp text-5xl underline pb-6">{(text != "")? text : <div className='invisible'>fill</div>}</h1>
+                <div className="text-xl text-center"> Hello my name is <div className="text-purp text-5xl underline pb-6">{(text != "")? text : <div className='invisible'>fill</div>}</div>
                   I'm currently a full stack software engineer II working at BAE systems. Experienced working in mobile & web, back-end, 
-                  & application development. Skilled in C++, React, Javascript, Python, Automation, Databases, and Embedded systems. </p>
+                  & application development. Skilled in C++, React, Javascript, Python, Automation, Databases, and Embedded systems. </div>
               </div>
               <div className="flex flex-wrap flex-row space-x-12 pt-6 mx-auto items-center content-center justify-center text-center">
                 <div className="flex border-2 p-1 bg-white shadow-2xl border-black rounded-full group">
