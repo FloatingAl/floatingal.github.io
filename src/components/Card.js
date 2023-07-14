@@ -37,7 +37,7 @@ export default function Card({logo, company, duration, title, technologies, bull
   };
 
   return (
-  <div style={{perspective : '1000px' }}className={'w-97 h-97 m-auto'}>
+  <div style={{perspective : '1000px' }}className={'w-97 h-97 max-[640px]:w-auto m-auto'}>
     <div style={{transform: isFlipped ? 'rotateY(180deg)' : ''}} className={'w-full h-full rounded-xl relative cursor-pointer transition-all duration-1000 shadow-xl [transform-style:preserve-3d]'} onClick={handleclick}>
       <div className={'flex flex-col space-y-5 absolute w-full h-full rounded-xl bg-purp items-center justify-center [backface-visibility:hidden] [-webkit-backface-visibility: hidden] overflow-hidden'}>
         <div className='flex flex-col space-y-5'>
@@ -70,11 +70,6 @@ export default function Card({logo, company, duration, title, technologies, bull
           <div className={'flex flex-wrap text-justify p-6'}>
             <ul className={'list-disc text-xs space-y-2'}>
             {renderBullet()}
-              {/*<li>Maintain and extend software running on radio platforms used to translate coordinates and communicate between multiple devices.</li>
-              <li>Created a web application that alerts and monitors live network traffic between multiple radio platforms to measure better metrics using React.js and PostgreSQL.</li>
-              <li>Developed new features and tools in C++ for aircraft control & messaging systems used in real-time using Python.</li>
-              <li>Refactored and decoupled multiple core legacy components to utilize newer developer tools, resulting in over 30% reduction in build time and faster testing.</li>
-  <li>Lead & migrated CI/CD environment from BitBucket to Gitlabs to gain access to better tools and  functionality such as Docker.</li>*/}
             </ul>
           </div>
         </div>

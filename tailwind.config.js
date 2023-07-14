@@ -13,19 +13,38 @@ module.exports = {
         'bright-red': '#c85e4c',
         'smokey-white':'#F5F5F5',
         'purp':'#7510f7',
+        'cgray': '#D5D5D5',
       },
       width: {
+        97: '500px',
+        98: '600px'
+      },
+      minWidth: {
         97: '500px'
       },
+      minHeight: {
+        97: '500px'
+      },
+      maxHeight: {
+        99:'400px',
+      },
+      maxWidth: {
+        97:'500px',
+      },
       height: {
-        97: '600px'
+        97: '600px',
+        98: '500px',
+        99: '400px',
       },
       backface:{
         'backface-visibility': 'hidden',
         '-moz-backface-visibility': 'hidden',
         '-webkit-backface-visibility': 'hidden',
         '-ms-backface-visibility': 'hidden'
-      }
+      },
+      zIndex:{
+        999: '999'
+      },
     },
   },
   plugins: [],

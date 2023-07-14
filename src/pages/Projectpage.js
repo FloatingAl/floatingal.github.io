@@ -1,8 +1,8 @@
 import React from 'react'
 import { useState, useRef} from 'react';
 import { motion } from "framer-motion"
-import { Canvas, useFrame } from '@react-three/fiber'
-import Box from '../components/3drender';
+import Projectcard from '../components/Projectcard';
+import CanvasRender from '../components/3drender';
 
 
 
@@ -13,13 +13,18 @@ function Projectpage() {
     animate={{ opacity: 1 }}
     //exit={{opacity: 0}}
     transition={{ duration: 0.75, ease: "easeInOut"}}>
-    <div className='m-auto h-[65vh] items-center justify-center place-content-center'>
-      <Canvas>
-        <ambientLight />
-        <pointLight position={[10, 10, 10]} />
-        <Box position={[-1.2, 0, 0]} />
-        <Box position={[1.2, 0, 0]} />
-      </Canvas>
+    <div className="flex flex-wrap flex-col container overflow-hidden items-center justify-between p-6 m-auto font-mono">
+      <div className="m-auto container text-start items-start text-5xl"> 
+        <h1>projects</h1>
+      </div>
+      </div>
+      <div className='flex'>
+        <motion.div className='grid p-6 gap-x-6 gap-y-8 lg:grid-cols-2 overflow-x-auto md:grid-cols-1 max-[640px]:grid-cols-1 m-auto'>
+          <Projectcard/>
+          <Projectcard/>
+          <Projectcard/>
+          <Projectcard/>
+        </motion.div> 
     </div>
   </motion.div>
   )
