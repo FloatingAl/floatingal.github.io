@@ -1,6 +1,6 @@
 import Homepage from '../pages/Homepage';
 import Workpage from '../pages/Workpage';
-import { BrowserRouter, Routes, Route, useLocation} from "react-router-dom";
+import {Routes, Route, useLocation} from "react-router-dom";
 import Projectpage from '../pages/Projectpage';
 import { AnimatePresence } from 'framer-motion';
 

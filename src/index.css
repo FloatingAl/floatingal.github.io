@@ -9,11 +9,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  
 }
 
 html {
   background-image: url("./images/confetti-doodles.svg");
   background-size: 100%;
+  z-index: 1;
 }
 
 code {
@@ -28,5 +31,10 @@ code {
 }
 
 #card{
-  color: transparent
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.1) 10%,
+    rgb(0 0 0 / 78%) 80%
+  );
+  background-color: white;
 }

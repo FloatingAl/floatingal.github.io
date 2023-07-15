@@ -20,7 +20,7 @@ function Navbar() {
   
 
   return (
-    <nav className="flex flex-wrap items-center sticky top-0 justify-between p-6  z-50 border-b border-black bg-smokey-white ">
+    <nav className="flex flex-wrap items-center sticky top-0 justify-between p-6 !z-[999] border-b border-black  bg-smokey-white ">
         <div className="flex flex-wrap items-center justify-between space-x-5 mx-auto">
             <img src={w_lion} className=" inline-block items-center h-14 w-14 mx-auto"></img>
             <div className="flex flex-wrap items-center justify-between space-x-6 mx-auto">

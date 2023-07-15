@@ -61,6 +61,24 @@ return(
   </mesh>
 )}
 
+function Donut(props) {
+  const ref = useRef()
+  const [hovered, hover] = useState(false)
+  const [clicked, click] = useState(false)
+  useFrame((state, delta) => (ref.current.rotation.y += delta))
+return(
+  <mesh
+    {...props}
+    scale={0.4}
+    ref={ref}
+    onClick={(event) => click(!clicked)}
+    onPointerOver={(event) => hover(true)}
+    onPointerOut={(event) => hover(false)}>
+    <torusGeometry args={[3, 1, 16, 100]} />
+    <meshStandardMaterial color={hovered ? 'purple' : 'orange'} />
+  </mesh>
+)}
+
 
 function CanvasRender(props){
   return(
@@ -68,7 +86,7 @@ function CanvasRender(props){
         <OrbitControls enableZoom={false}/>
         <ambientLight />
         <pointLight position={[10, 10, 10]} />
-        <Box position={[0, 0, .5]} />
+        <Donut position={[0, 0, .5]} />
       </Canvas>
   )}
 

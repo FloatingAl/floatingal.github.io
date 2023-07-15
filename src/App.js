@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Projectpage from './pages/Projectpage';
 import { AnimatePresence } from 'framer-motion';
 import AnimatedRoutes from './components/AnimatedRoutes';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
     <div className="App">
       <Navbar/>
       <AnimatedRoutes/>
+      <Footer/>
     </div>
     </BrowserRouter>
   );
