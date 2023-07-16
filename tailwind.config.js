@@ -18,7 +18,8 @@ module.exports = {
       width: {
         96: '300px',
         97: '500px',
-        98: '600px'
+        98: '600px',
+        99: '450px',
       },
       height: {
         96: '500px',

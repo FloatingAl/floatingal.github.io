@@ -60,10 +60,10 @@ export default function Card({logo, company, duration, title, technologies, bull
       <div className={'flex overflow-y-auto w-full h-full rounded-xl bg-white [backface-visibility:hidden] [-webkit-backface-visibility: hidden] overflow-hidden [transform:rotateY(180deg)]'}>
         <div className={'w-full h-full items-center justify-center'}>
           <div className={'bg-purp relative'}>
-            <div className='pt-6 m-auto'>
+            <div className='pt-6 m-auto  max-[640px]:text-sm'>
               <p className='p-3 font-bold shadow-2xl inline-block bg-white rounded-full'>Technologies</p>
             </div>
-            <div className={'flex flex-row flex-wrap p-6 space-x-3 m-auto items-center justify-center'}>
+            <div className={'flex flex-row flex-wrap p-4 space-x-4 m-auto justify-center'}>
               {renderLogo()}
             </div>
           </div>
