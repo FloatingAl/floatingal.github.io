@@ -58,7 +58,7 @@ export default class Workpage extends Component {
           animate="visible"
           >
           <motion.div 
-          className=''
+          className=' '
           variants={item}
           >
             <Card
