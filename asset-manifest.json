@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.0f9692b6.css",
-    "main.js": "/static/js/main.ea2942f1.js",
+    "main.css": "/static/css/main.e5cba80c.css",
+    "main.js": "/static/js/main.fdc404fa.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/nutrimi_gif.gif": "/static/media/nutrimi_gif.18c0d14264e9a28df581.gif",
     "static/media/quickster_gif.gif": "/static/media/quickster_gif.972e86cb2d0a13f1bad7.gif",
@@ -28,12 +28,12 @@
     "static/media/git.svg": "/static/media/git.f25cb5f6bd6aa707bdb405691f127156.svg",
     "index.html": "/index.html",
     "static/media/react.svg": "/static/media/react.bd64145d806c9c041b485c68e1309d32.svg",
-    "main.0f9692b6.css.map": "/static/css/main.0f9692b6.css.map",
-    "main.ea2942f1.js.map": "/static/js/main.ea2942f1.js.map",
+    "main.e5cba80c.css.map": "/static/css/main.e5cba80c.css.map",
+    "main.fdc404fa.js.map": "/static/js/main.fdc404fa.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0f9692b6.css",
-    "static/js/main.ea2942f1.js"
+    "static/css/main.e5cba80c.css",
+    "static/js/main.fdc404fa.js"
   ]
 }
