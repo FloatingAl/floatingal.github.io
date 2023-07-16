@@ -24,7 +24,7 @@ function Navbar() {
         <div className="flex flex-wrap items-center justify-between space-x-5 mx-auto">
             <img src={w_lion} className=" inline-block items-center h-14 w-14 mx-auto"></img>
             <div className="flex flex-wrap items-center justify-between space-x-6 mx-auto">
-                <NavLink to="/portfolio" style={navLinkActive} className="block rounded px-2 py-1 hover:text-white hover:bg-purp mx-auto">
+                <NavLink to="/" style={navLinkActive} className="block rounded px-2 py-1 hover:text-white hover:bg-purp mx-auto">
                 about
                 </NavLink>
                 <NavLink to='/work' style={navLinkActive} className="block rounded px-2 py-1 hover:text-white hover:bg-purp mx-auto">
