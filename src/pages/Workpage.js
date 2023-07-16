@@ -46,7 +46,7 @@ export default class Workpage extends Component {
       //exit={{opacity: 0}}
       transition={{ duration: 0.75, ease: "easeInOut"}}
     >
-      <div className='items-center justify-center place-content-center p-6 font-mono space-y-6'>
+      <div className='items-center justify-center place-content-center p-6  font-mono space-y-6'>
         <div className='m-auto container'>
           <h1 className="flex m-auto text-start text-5xl max-[640px]:text-3xl">work experience</h1>
           <h5 className="flex m-auto text-start text-xl max-[640px]:text-lg">(Scroll & click on card for more information)</h5>
