@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <BrowserRouter forceRefresh={true}>
+    <BrowserRouter basename='/portfolio' forceRefresh={true}>
     <div className="App">
       <Navbar/>
       <AnimatedRoutes/>
