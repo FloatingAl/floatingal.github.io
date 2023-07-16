@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.463deb32.css",
-    "main.js": "/static/js/main.5bdf354d.js",
+    "main.js": "/static/js/main.a37f9faf.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/nutrimi_gif.gif": "/static/media/nutrimi_gif.18c0d14264e9a28df581.gif",
     "static/media/quickster_gif.gif": "/static/media/quickster_gif.972e86cb2d0a13f1bad7.gif",
@@ -29,11 +29,11 @@
     "index.html": "/index.html",
     "static/media/react.svg": "/static/media/react.928f956d9c8ebcffb98a8e917154a81a.svg",
     "main.463deb32.css.map": "/static/css/main.463deb32.css.map",
-    "main.5bdf354d.js.map": "/static/js/main.5bdf354d.js.map",
+    "main.a37f9faf.js.map": "/static/js/main.a37f9faf.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.463deb32.css",
-    "static/js/main.5bdf354d.js"
+    "static/js/main.a37f9faf.js"
   ]
 }
