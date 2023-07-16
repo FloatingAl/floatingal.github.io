@@ -19,7 +19,7 @@ function Projectpage() {
         <h1>projects</h1>
       </div>
       </div>
-      <div className='flex'>
+      <div className='flex justify-center'>
           <Projectcard/>
       </div>
   </motion.div>

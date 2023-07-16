@@ -68,7 +68,7 @@ export default function Card({logo, company, duration, title, technologies, bull
             </div>
           </div>
           <div className={'flex flex-wrap text-justify p-6'}>
-            <ul className={'list-disc text-xs space-y-2'}>
+            <ul className={'list-disc md:text-md text-xs space-y-2'}>
             {renderBullet()}
             </ul>
           </div>

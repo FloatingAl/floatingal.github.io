@@ -31,7 +31,7 @@ export default function Projectcard() {
         for(const name in tech){
             
             techstack.push (
-                <span key={name} className='text-white py-1 px-4 rounded-full bg-[#696869]'>{tech[name]}</span>
+                <span key={name} className='max-[340px]:text-xs text-white py-1 px-4 rounded-full bg-[#696869]'>{tech[name]}</span>
             )
         }
         return techstack
@@ -59,11 +59,11 @@ export default function Projectcard() {
               staggerChildren: 0.2
             }}>
                 <a key={projectUrl} href={projectUrl} rel="noreferrer" target="_blank" className=''>
-                    <button id='card' className='flex flex-col justify-end w-97 h-99 basis:1/2 bg-black max-[640px]:w-auto m-auto !z-50 opacity-100 relative shadow-2xl rounded-2xl overflow-hidden'>
+                    <button id='card' className='flex flex-col justify-end w-97 h-99 bg-black max-[640px]:w-4/5 !z-50 opacity-100 relative shadow-2xl rounded-2xl overflow-hidden'>
                         <img className= 'w-full h-full object-cover m-auto !z-30 opacity-30 relative' src={projectImg}></img>
                         <div className='text-left rounded-b-2xl m-auto absolute !z-40 bottom-0 px-4 py-3 w-full'>
-                            <h1 className='font-extrabold text-white text-3xl'>{projectName}</h1>
-                            <p className='text-cgray' >{projectDes}</p>
+                            <h1 className='max-[340px]:text-lg  font-extrabold text-white text-3xl'>{projectName}</h1>
+                            <p className='text-cgray max-[340px]:text-xs ' >{projectDes}</p>
                             <div className='flex flex-wrap flex-row gap-3 py-3'>
                                 {techloop(projectTech)}
                             </div>
@@ -79,7 +79,7 @@ export default function Projectcard() {
     
   return (
     <motion.div 
-    className='grid p-6 overflow-hidden gap-x-6 gap-y-8 no-scrollbar lg:grid-cols-2 overflow-x-auto md:grid-cols-1 max-[640px]:grid-cols-1 m-auto'
+    className='grid p-6 overflow-hidden gap-x-6 max-[1020px]:gap-x-0 gap-y-8 no-scrollbar lg:grid-cols-2 overflow-x-auto md:grid-cols-1 max-[640px]:grid-cols-1'
     variants={container}
     initial="hidden"
     animate="visible"
