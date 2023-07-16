@@ -9,25 +9,22 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
+  min-height: 100vh;
   
+}
+
+#workPage, #homePage, #projectPage {
+  zoom: 90%
 }
 
 html {
   background-image: url("./images/confetti-doodles.svg");
   background-size: 100%;
-  zoom: 90%;
   z-index: 1;
-  height: 100%;
 }
 
-#footer{
-  width:100%;
-  position:absolute;
-  bottom:0;
-  left:0;
+footer{
+  margin-top: auto;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -49,6 +46,9 @@ code {
   background-color: #999999;
 }
 
+#card_upper{
+  
+}
 
 @layer utilities {
   @variants responsive {

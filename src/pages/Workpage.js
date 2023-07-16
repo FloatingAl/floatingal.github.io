@@ -41,6 +41,7 @@ export default class Workpage extends Component {
 
     return (
     <motion.div
+      id="workPage"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       //exit={{opacity: 0}}

@@ -10,6 +10,7 @@ import { projectdata } from '../data/projectdata'
 function Projectpage() {
   return (
   <motion.div
+    id="projectPage"
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     //exit={{opacity: 0}}
