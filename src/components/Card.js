@@ -40,7 +40,7 @@ export default function Card({logo, company, duration, title, technologies, bull
   <div style={{perspective : '1000px' }}className={'w-97 h-97 max-[640px]:w-auto m-auto'}>
     <div style={{transform: isFlipped ? 'rotateY(180deg)' : ''}} className={'w-full h-full rounded-xl relative cursor-pointer transition-all duration-1000 shadow-xl [transform-style:preserve-3d]'} onClick={handleclick}>
       <div className={'flex flex-col space-y-5 absolute w-full h-full rounded-xl bg-purp items-center justify-center [backface-visibility:hidden] [-webkit-backface-visibility: hidden] overflow-hidden'}>
-        <div className='flex flex-col space-y-5'>
+        <div className='flex flex-col space-y-5 p-4'>
           <div className='p-6 bg-white rounded-full shadow-2xl '>
             {logo}
           </div>
