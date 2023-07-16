@@ -52,7 +52,7 @@ export default class Workpage extends Component {
           <h5 className="flex m-auto text-start text-xl">(Scroll & click on card for more information)</h5>
         </div>
         <motion.div 
-          className="flex lg:flex-row md:flex-col sm:flex-col max-[640px]:flex-col m-auto items-center self-center p-12 overflow-hidden overflow-x-auto overflow-y-auto lg:space-x-16 lg:space-y-0 md:space-y-16 sm:space-y-16 max-[640px]:space-y-16"
+          className="flex lg:flex-row md:flex-col sm:flex-col max-[640px]:flex-col m-auto items-center self-center p-12 overflow-hidden no-scrollbar overflow-x-auto overflow-y-auto lg:space-x-16 lg:space-y-0 md:space-y-16 sm:space-y-16 max-[640px]:space-y-16"
           variants={container}
           initial="hidden"
           animate="visible"

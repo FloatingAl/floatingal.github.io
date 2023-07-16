@@ -34,7 +34,22 @@ code {
   background: linear-gradient(
     180deg,
     rgba(0, 0, 0, 0.1) 10%,
-    rgb(0 0 0 / 78%) 80%
+    rgb(0 0 0 / 100%) 80%
   );
-  background-color: white;
+  background-color: #999999;
+}
+
+@layer utilities {
+  @variants responsive {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+  }
 }
