@@ -16,8 +16,15 @@ module.exports = {
         'cgray': '#D5D5D5',
       },
       width: {
+        96: '300px',
         97: '500px',
         98: '600px'
+      },
+      height: {
+        96: '500px',
+        97: '600px',
+        98: '500px',
+        99: '400px',
       },
       minWidth: {
         97: '500px'
@@ -30,11 +37,6 @@ module.exports = {
       },
       maxWidth: {
         97:'500px',
-      },
-      height: {
-        97: '600px',
-        98: '500px',
-        99: '400px',
       },
       backface:{
         'backface-visibility': 'hidden',

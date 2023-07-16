@@ -58,8 +58,7 @@ export default function Projectcard() {
               damping: 20,
               staggerChildren: 0.2
             }}>
-                <a key={projectUrl} href={projectUrl} rel="noreferrer" target="_blank" className=''>
-                    <button id='card' className='flex flex-col justify-end w-97 h-99 bg-black max-[640px]:w-4/5 !z-50 opacity-100 relative shadow-2xl rounded-2xl overflow-hidden'>
+                <a id="card" key={projectUrl} href={projectUrl} rel="noreferrer" target="_blank" className='flex m-auto flex-col container justify-end w-97 h-99 bg-black max-[640px]:w-4/5 !z-50 opacity-100 relative shadow-2xl rounded-2xl overflow-hidden'>
                         <img className= 'w-full h-full object-cover m-auto !z-30 opacity-30 relative' src={projectImg}></img>
                         <div className='text-left rounded-b-2xl m-auto absolute !z-40 bottom-0 px-4 py-3 w-full'>
                             <h1 className='max-[340px]:text-lg  font-extrabold text-white text-3xl'>{projectName}</h1>
@@ -68,7 +67,6 @@ export default function Projectcard() {
                                 {techloop(projectTech)}
                             </div>
                         </div>
-                    </button>
                 </a>
             </motion.div>
             );
@@ -79,7 +77,7 @@ export default function Projectcard() {
     
   return (
     <motion.div 
-    className='grid p-6 overflow-hidden gap-x-6 max-[1020px]:gap-x-0 gap-y-8 no-scrollbar lg:grid-cols-2 overflow-x-auto md:grid-cols-1 max-[640px]:grid-cols-1'
+    className='grid m-auto justify-start p-6 overflow-hidden gap-x-6 max-[1020px]:gap-x-0 gap-y-8 no-scrollbar lg:grid-cols-2 overflow-x-auto md:grid-cols-1 max-[640px]:grid-cols-1'
     variants={container}
     initial="hidden"
     animate="visible"

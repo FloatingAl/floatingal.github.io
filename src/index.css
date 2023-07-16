@@ -39,6 +39,10 @@ code {
   background-color: #999999;
 }
 
+#card_upper{
+  
+}
+
 @layer utilities {
   @variants responsive {
     /* Hide scrollbar for Chrome, Safari and Opera */

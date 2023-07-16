@@ -19,7 +19,7 @@ export default function Card({logo, company, duration, title, technologies, bull
   const renderLogo = () => {
     return Object.entries(technologies).map(([key, value]) => (
         <div className='flex flex-col space-y-2'>
-          <div key={Math.random()} className="shadow-2xl p-3 rounded-full bg-white m-auto">
+          <div key={Math.random()} className="shadow-2xl p-3 w-12 h-12 rounded-full bg-white m-auto">
             {value}
           </div>
           <div key={Math.random()} className='shadow-2xl rounded-full bg-white text-xs p-1 '>
@@ -37,7 +37,7 @@ export default function Card({logo, company, duration, title, technologies, bull
   };
 
   return (
-  <div style={{perspective : '1000px' }}className={'w-97 h-97 max-[640px]:w-auto m-auto'}>
+  <div style={{perspective : '1000px' }}className={'w-97 h-97 max-[640px]:w-96 max-[640px]:h-96 max-[640px]:w-auto m-auto'}>
     <div style={{transform: isFlipped ? 'rotateY(180deg)' : ''}} className={'w-full h-full rounded-xl relative cursor-pointer transition-all duration-1000 shadow-xl [transform-style:preserve-3d]'} onClick={handleclick}>
       <div className={'flex flex-col space-y-5 absolute w-full h-full rounded-xl bg-purp items-center justify-center [backface-visibility:hidden] [-webkit-backface-visibility: hidden] overflow-hidden'}>
         <div className='flex flex-col space-y-5 p-4'>

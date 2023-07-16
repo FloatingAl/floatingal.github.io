@@ -48,11 +48,11 @@ export default class Workpage extends Component {
     >
       <div className='items-center justify-center place-content-center p-6 font-mono space-y-6'>
         <div className='m-auto container'>
-          <h1 className="flex m-auto text-start text-5xl">work experience</h1>
-          <h5 className="flex m-auto text-start text-xl">(Scroll & click on card for more information)</h5>
+          <h1 className="flex m-auto text-start text-5xl max-[640px]:text-3xl">work experience</h1>
+          <h5 className="flex m-auto text-start text-xl max-[640px]:text-lg">(Scroll & click on card for more information)</h5>
         </div>
         <motion.div 
-          className="flex container lg:flex-row md:flex-col sm:flex-col max-[640px]:flex-col m-auto items-center self-center p-12 max-[640px]:p-0 overflow-hidden no-scrollbar overflow-x-auto overflow-y-auto lg:space-x-16 lg:space-y-0 md:space-y-16 sm:space-y-16 max-[640px]:space-y-16"
+          className="flex lg:flex-row md:flex-col sm:flex-col max-[640px]:flex-col m-auto items-center self-center p-12 max-[640px]:p-0 overflow-scroll overflow-y-auto lg:space-x-16 lg:space-y-0 md:space-y-16 sm:space-y-16 max-[640px]:space-y-16"
           variants={container}
           initial="hidden"
           animate="visible"
