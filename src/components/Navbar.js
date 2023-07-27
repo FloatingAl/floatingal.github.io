@@ -22,7 +22,9 @@ function Navbar() {
   return (
     <nav className="flex flex-wrap items-center sticky top-0 justify-between p-4 !z-[999] border-b border-black bg-smokey-white ">
         <div className="flex flex-wrap items-center justify-between space-x-5 mx-auto">
-            <img src={w_lion} className=" inline-block items-center h-14 w-14 mx-auto"></img>
+            <a href="https://www.albaramehene.com" className=" inline-block items-center h-14 w-14 mx-auto">
+              <img src={w_lion}></img>
+            </a>
             <div className="flex flex-wrap items-center justify-between space-x-6 mx-auto">
                 <NavLink to="/" style={navLinkActive} className="block rounded px-2 py-1 hover:text-white hover:bg-purp mx-auto">
                 about
