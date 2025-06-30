@@ -14,6 +14,9 @@ module.exports = {
         'smokey-white':'#F5F5F5',
         'purp':'#7510f7',
         'cgray': '#D5D5D5',
+        'vanilla' : '#FFF7AE',
+        'bigwhite' : '#f8fcfc',
+        'bigorange' : '#FB5012',
       },
       width: {
         96: '300px',

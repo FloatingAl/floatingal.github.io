@@ -1,20 +1,27 @@
 import Homepage from '../pages/Homepage';
 import Workpage from '../pages/Workpage';
-import { Routes, Route, useLocation} from "react-router-dom";
+import { motion } from "framer-motion";
 import Projectpage from '../pages/Projectpage';
-import { AnimatePresence } from 'framer-motion';
+import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function AnimatedRoutes() {
-    const location = useLocation()
   return (
-    <AnimatePresence>
-        <Routes location={location} key={location.pathname}>
-            <Route path='/' element={<Homepage/>}/>
-            {/*<Route path='/portfolio' element={<Homepage/>}/>*/}
-            <Route path='/work' element={<Workpage/>}/>
-            <Route path='/project' element={<Projectpage/>}/>
-        </Routes> 
-    </AnimatePresence>
+<div>
+    <motion.section id="about" className='scroll-mt-20' initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.6 }}>
+      <Homepage />
+    </motion.section>
+
+    <motion.section id="work" className='scroll-mt-20' initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.6 }}>
+      <Workpage />
+    </motion.section>
+
+    <motion.section id="projects" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.6 }}>
+      <Projectpage />
+    </motion.section>
+    
+  </div>
   )
 }
 

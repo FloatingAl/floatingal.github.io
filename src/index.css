@@ -18,7 +18,8 @@ body {
 }
 
 html { 
-  background-image: url("./images/confetti-doodles.svg");
+  /*background-image: url("./images/confetti-doodles.svg");*/
+  background-color: #f8fcfc;
   background-size: 100%;
   z-index: 1;
 }
@@ -32,9 +33,9 @@ code {
 }
 
 #face{
-  clip-path: circle();
+  /*clip-path: circle();
   border-radius: 50%;
-  background: -webkit-linear-gradient(135deg, #7510f7, #F5F5F5);
+  background: -webkit-linear-gradient(135deg, #7510f7, #F5F5F5);*/
 }
 
 #card{

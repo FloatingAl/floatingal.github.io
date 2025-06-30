@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
 import Homepage from './pages/Homepage';
@@ -10,13 +9,13 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <HashRouter forceRefresh={true}>
+    <BrowserRouter forceRefresh={true}>
     <div className="App">
       <Navbar/>
       <AnimatedRoutes/>
       <Footer/>
     </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 

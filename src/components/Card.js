@@ -39,27 +39,27 @@ export default function Card({logo, company, duration, title, technologies, bull
   return (
   <div style={{perspective : '1000px' }}className={'w-97 h-97 max-[640px]:w-96 max-[640px]:h-96 max-[640px]:w-auto m-auto'}>
     <div style={{transform: isFlipped ? 'rotateY(180deg)' : ''}} className={'w-full h-full rounded-xl relative cursor-pointer transition-all duration-1000 shadow-xl [transform-style:preserve-3d]'} onClick={handleclick}>
-      <div className={'flex flex-col space-y-5 absolute w-full h-full rounded-xl bg-purp items-center justify-center [backface-visibility:hidden] [-webkit-backface-visibility: hidden] overflow-hidden'}>
+      <div className={'flex border-2 border-gray flex-col space-y-5 absolute w-full h-full rounded-xl bg-white items-center justify-center [backface-visibility:hidden] [-webkit-backface-visibility: hidden] overflow-hidden shadow-2xl '}>
         <div className='flex flex-col space-y-5 p-4'>
-          <div className='p-6 bg-white rounded-full shadow-2xl '>
+          <div className='p-6 bg-white rounded-full  '>
             {logo}
           </div>
           <div className='p-3 '>
-            <div className='text-xl font-black text-white p-3'>
+            <div className='text-xl font-black text-black p-3'>
               <h1>{company} </h1>
             </div>
-            <div className='text-m font-medium text-white p-3'>
+            <div className='text-m font-medium text-black p-3'>
               <p>{duration}</p>
             </div>
-            <div className='text-m font-medium text-white p-3'>
+            <div className='text-m font-medium text-black p-3'>
               <p>{title}</p>
             </div>
           </div>
         </div>
       </div>
-      <div className={'flex overflow-y-auto w-full h-full rounded-xl bg-white [backface-visibility:hidden] [-webkit-backface-visibility: hidden] overflow-hidden [transform:rotateY(180deg)]'}>
+      <div className={'flex border-2 border-gray overflow-y-auto w-full h-full rounded-xl bg-white [backface-visibility:hidden] [-webkit-backface-visibility: hidden] overflow-hidden [transform:rotateY(180deg)]'}>
         <div className={'w-full h-full items-center justify-center'}>
-          <div className={'bg-purp relative'}>
+          <div className={'bg-bigorange relative'}>
             <div className='pt-6 m-auto  max-[640px]:text-sm'>
               <p className='p-3 font-bold shadow-2xl inline-block bg-white rounded-full'>Technologies</p>
             </div>
