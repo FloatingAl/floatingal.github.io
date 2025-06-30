@@ -195,6 +195,7 @@ export default class Workpage extends Component {
   }
 }
 
+// Arrows
 const iconsProps = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
@@ -225,6 +226,7 @@ function ArrowRight() {
   )
 }
 
+// Arrow animation
 const slideVariants = {
   enter: (direction) => ({
     x: direction > 0 ? 300 : -300,
@@ -240,9 +242,6 @@ const slideVariants = {
   }),
 }
 
-/**
- * ==============   Styles   ================
- */
 const container = {
   display: "flex",
   position: "relative",
