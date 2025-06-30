@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react'
 
 function Homepage() {
   const [text, setText] = useState("")
-  const [fullText, setFullText] = useState(
+  const [fullText] = useState(
     "Albara Mehene"
   )
   const [index, setIndex] = useState(0)
@@ -58,8 +58,8 @@ function Homepage() {
                 </div>
                 <div className="flex border-2 bg-white shadow-2xl border-black rounded-full group">
                 <a href={resume} rel="noreferrer" target="_blank" className="hover:transition-all duration-300 group-hover:bg-bigorange p-2 rounded-full">
-                  <svg className="  group-hover:fill-white max-[640px]:w-8 max-[640px]:h-8 w-12 h-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="paper">
-                    <path d="M52 64c2.206 0 4-1.794 4-4V4c0-2.206-1.794-4-4-4H26c-1.638 0-3.668.841-4.828 2L10 13.171C8.841 14.33 8 16.36 8 18v42c0 2.206 1.794 4 4 4h40zm0-60v56H12V18h10c2.206 0 4-1.794 4-4V4h26zM22 6.828V14h-7.172L22 6.828z"></path><path d="M32 16h12a2 2 0 0 0 0-4H32a2 2 0 0 0 0 4zM44 22H20a2 2 0 0 0 0 4h24a2 2 0 0 0 0-4zM44 32H20a2 2 0 0 0 0 4h24a2 2 0 0 0 0-4zM44 42H20a2 2 0 0 0 0 4h24a2 2 0 0 0 0-4zM44 52H20a2 2 0 0 0 0 4h24a2 2 0 0 0 0-4z"></path>
+                  <svg className="  group-hover:fill-white max-[640px]:w-8 max-[640px]:h-8 w-12 h-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="paper">
+                  <rect height="1" width="12" x="10" y="2"/><rect height="1" width="12" x="10" y="2"/><rect height="1" transform="translate(-9.5 22.5) rotate(-90)" width="20" x="-3.5" y="15.5"/><rect height="1" transform="translate(11.5 39.5) rotate(-90)" width="16" x="17.5" y="13.5"/><rect height="1" width="6" x="17" y="6"/><rect height="1" width="14" x="9" y="9"/><rect height="1" width="14" x="9" y="12"/><rect height="1" width="14" x="9" y="15"/><rect height="1" width="14" x="9" y="18"/><rect height="1" width="10" x="9" y="21"/><rect height="1" width="7" x="9" y="24"/><path d="M22,2V3h2a1,1,0,0,1,1,1V6h1V4a2,2,0,0,0-2-2Z"/><path d="M10,2V3H8A1,1,0,0,0,7,4V6H6V4A2,2,0,0,1,8,2Z"/><path d="M8,30V29H8a1,1,0,0,1-1-1V26H6v2a2,2,0,0,0,2,2Z"/><path d="M21.91,21.15c-.57-.32-.91-.72-.91-1.15a6.09,6.09,0,0,1-.21,1.59c-1,4.07-6,7.18-12.12,7.4H8v1h.72c8.86-.15,16.07-3.15,17.14-7A3.77,3.77,0,0,0,26,22,8.72,8.72,0,0,1,21.91,21.15Zm-5.78,7a10.5,10.5,0,0,0,5.54-6,8.94,8.94,0,0,0,3.15.79C24.07,25,20.91,27,16.13,28.13Z"/>
                   </svg>
                 </a>
                 </div>

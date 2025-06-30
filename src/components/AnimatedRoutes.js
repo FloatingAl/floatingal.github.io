@@ -2,9 +2,6 @@ import Homepage from '../pages/Homepage';
 import Workpage from '../pages/Workpage';
 import { motion } from "framer-motion";
 import Projectpage from '../pages/Projectpage';
-import { useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 
 function AnimatedRoutes() {
   return (
@@ -17,7 +14,7 @@ function AnimatedRoutes() {
       <Workpage />
     </motion.section>
 
-    <motion.section id="projects" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.6 }}>
+    <motion.section id="projects" className='scroll-mt-20' initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.6 }}>
       <Projectpage />
     </motion.section>
     

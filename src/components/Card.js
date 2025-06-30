@@ -1,11 +1,4 @@
-import { transform } from 'framer-motion';
 import React, { useState } from 'react'
-import { ReactComponent as Cpluspluslogo } from '../images/c++.svg'
-import { ReactComponent as Pythonlogo } from '../images/python.svg'
-import { ReactComponent as Dockerlogo } from '../images/docker.svg'
-import { ReactComponent as Postgresqllogo } from '../images/postgresql.svg'
-import { ReactComponent as Reactlogo } from '../images/react.svg'
-import { ReactComponent as Javascriptlogo } from '../images/javascript.svg'
 
 export default function Card({logo, company, duration, title, technologies, bullets}) {
 
@@ -17,17 +10,20 @@ export default function Card({logo, company, duration, title, technologies, bull
   };
 
   const renderLogo = () => {
-    return Object.entries(technologies).map(([key, value]) => (
-        <div className='flex flex-col space-y-2'>
-          <div key={Math.random()} className="shadow-2xl p-3 w-12 h-12 rounded-full bg-white m-auto">
-            {value}
+    return (
+      <div className="grid grid-cols-3 gap-4 sm:grid-cols-4 md:grid-cols-5">
+        {Object.entries(technologies).map(([key, value]) => (
+          <div key={key} className="flex flex-col items-center space-y-2 w-20">
+            <div className="w-10 h-10 p-2 rounded-full flex items-center justify-center bg-bigwhite shadow-md">
+              {value}
+            </div>
+            <div className="text-xs text-center text-gray-700 bg-white px-2 py-1 rounded shadow-sm">
+              {key}
+            </div>
           </div>
-          <div key={Math.random()} className='shadow-2xl rounded-full bg-white text-xs p-1 '>
-              <span key={Math.random()}>{key}</span>
-          </div>
-        </div>
-
-    ));
+        ))}
+      </div>
+    );
   };
 
   const renderBullet = () => {
@@ -61,7 +57,7 @@ export default function Card({logo, company, duration, title, technologies, bull
         <div className={'w-full h-full items-center justify-center'}>
           <div className={'bg-bigorange relative'}>
             <div className='pt-6 m-auto  max-[640px]:text-sm'>
-              <p className='p-3 font-bold shadow-2xl inline-block bg-white rounded-full'>Technologies</p>
+              <p className='p-3 font-bold shadow-2xl inline-block bg-white rounded '>Technologies</p>
             </div>
             <div className={'flex flex-row flex-wrap p-4 space-x-4 m-auto justify-center'}>
               {renderLogo()}
