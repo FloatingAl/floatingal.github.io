@@ -1,8 +1,5 @@
 import React from 'react'
-import { useState, useEffect} from 'react'
-import lion from '../images/lion-logo.svg'
 import w_lion from '../images/lion.svg'
-import { NavLink} from 'react-router-dom';
 
 function Navbar() {
   
