@@ -3,6 +3,7 @@ import face from '../images/faceprofile.jpg'
 import resume from '../images/albara_mehene_resume.pdf'
 import { motion } from "framer-motion"
 import { useState, useEffect } from 'react'
+import Typewriter from '../components/Typewriter';
 
 function Homepage() {
   const [text, setText] = useState("")
@@ -28,7 +29,7 @@ function Homepage() {
       //exit={{opacity: 0}}
       transition={{ duration: 0.75, ease: "easeInOut"}}
     >
-        <div className="flex flex-wrap flex-col container items-center aspect-auto justify-between p-6 m-auto font-mono">
+        <div className="flex flex-wrap flex-col container items-center aspect-auto justify-between p-6 m-auto font-sans">
           <div className="m-auto container text-start items-start text-5xl max-[640px]:text-3xl "> 
             <h1>about</h1>
           </div>
@@ -38,7 +39,15 @@ function Homepage() {
             </div>
             <div className="mx-auto sm:pt-8 space-y-8 xl:basis-1/2 lg:basis-full md:basis-full sm:basis-full flex flex-col text-justify">
               <div className='rounded-lg border-2 border-gray bg-white shadow-2xl p-9 text-black'>
-                <div className=" max-[640px]:text-sm text-xl text-justify"> <div className=' max-[640px]:text-base text-xl text-center'>Hello my name is </div><div className="text-bigorange max-[640px]:text-xl text-5xl text-center font-extrabold underline pb-6">{(text != "")? text : <div className='invisible'>fill</div>}</div>
+                <div className=" max-[640px]:text-base max-[640px]:leading-normal text-xl leading-snug text-left"> 
+                  
+                  <div className=' max-[640px]:text-base max-[640px]:leading-normal text-xl leading-snug text-left'>Hello my name is: </div>
+
+                  <div className="hero-container">
+                    <Typewriter className="hero-title" text="Albara Mehene" />
+                  </div>
+
+                
                 Experienced working in embedded, back-end, & application development. Skilled in C++, React, Python, Automation, Databases, Embedded systems, Radar system work and others. Currently interested in Full stack development, cloud software development, and embedded development. Bachelor's Degree in Computer Science from University of Massachusetts Lowell.</div>
               </div>
               <div className="grid grid-flow-col auto-cols-max max-[640px]:space-x-6 space-x-12 pt-6 mx-auto content-center justify-center text-center">

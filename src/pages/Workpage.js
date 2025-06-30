@@ -14,6 +14,8 @@ import { ReactComponent as Jenkinslogo } from '../images/jenkins.svg'
 import { ReactComponent as Grafanalogo } from '../images/grafana.svg'
 import { ReactComponent as MySQLlogo } from '../images/mysql.svg'
 import { ReactComponent as Gitlogo } from '../images/git.svg' 
+import { ReactComponent as IOlogo} from '../images/microchip.svg'
+import { ReactComponent as Clogo} from '../images/c.svg'
 
 export default class Workpage extends Component {
   constructor(props) {
@@ -26,13 +28,13 @@ export default class Workpage extends Component {
         duration: "September 2023 - Present",
         title: "Software Engineer II",
         technologies: {
-          Cplusplus: <Cpluspluslogo/>,
+          "C++": <Cpluspluslogo/>,
           Python: <Pythonlogo/>,
           Git: <Gitlogo />,
           Javascript: <Javascriptlogo />,
           Jenkins: <Jenkinslogo/>,
-          C: <Cpluspluslogo/>,
-          GPIO: <Cpluspluslogo/>
+          C: <Clogo/>,
+          "I/O": <IOlogo/>
         },
         bullets: [
           "Built a C++ API enabling real-time communication between GUI interfaces and robotic hardware, enhancing system responsiveness during clinical operations.",
@@ -51,11 +53,11 @@ export default class Workpage extends Component {
         duration: "January 2022 - September 2023",
         title: "Software Engineer II",
         technologies: {
-          Cplusplus: <Cpluspluslogo/>,
+          "C++": <Cpluspluslogo/>,
           Python: <Pythonlogo/>,
           Docker: <Dockerlogo/>,
           Postgresql: <Postgresqllogo/>,
-          ReactName: <Reactlogo/>,
+          "React": <Reactlogo/>,
           Javascript: <Javascriptlogo/>,
 
         },
@@ -76,7 +78,7 @@ export default class Workpage extends Component {
         duration: "May 2019 - December 2021",
         title: "Software Engineer I",
         technologies: {
-          Cplusplus: <Cpluspluslogo/>,
+          "C++": <Cpluspluslogo/>,
           Python: <Pythonlogo/>,
           Docker: <Dockerlogo/>,
           Postgresql: <Postgresqllogo/>,
@@ -123,7 +125,7 @@ export default class Workpage extends Component {
       //exit={{opacity: 0}}
       transition={{ duration: 0.75, ease: "easeInOut"}}
     >
-      <div className='items-center justify-center place-content-center p-6 font-mono space-y-6'>
+      <div className='items-center justify-center place-content-center p-6 font-sans space-y-6'>
         <div className='m-auto container'>
           <h1 className="flex m-auto text-start text-5xl max-[640px]:text-3xl">work experience</h1>
           <h5 className="flex m-auto text-start text-xl max-[640px]:text-lg">(Scroll & click on card for more information)</h5>

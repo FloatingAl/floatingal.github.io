@@ -24,6 +24,39 @@ html {
   z-index: 1;
 }
 
+.hero-container {
+  margin: auto auto;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  
+  .hero-title {
+    font-family: 'Monaco', Consolas, 'Lucida Console', monospace;
+    font-size: 1.5em;
+    color: #FB5012;
+
+    &:before {
+      content: '>\a0';
+    }
+
+    @include mobile {
+      font-size: 2.3em;
+    }
+
+    span {
+      background-color: rgba(84, 84, 80, 0.65);
+      animation: caret 1s steps(1) infinite ;
+    }
+
+    @keyframes caret {
+      0%, 50% { background-color: black; }
+      51%, 100% { background-color: transparent; }
+    }
+  }
+}
+
 footer{
   margin-top: auto;
 }

@@ -15,7 +15,7 @@ function Projectpage() {
     animate={{ opacity: 1 }}
     //exit={{opacity: 0}}
     transition={{ duration: 0.75, ease: "easeInOut"}}>
-    <div className="flex flex-wrap flex-col container overflow-hidden items-center justify-between p-6 m-auto font-mono">
+    <div className="flex flex-wrap flex-col container overflow-hidden items-center justify-between p-6 m-auto font-sans">
       <div className="m-auto container text-start items-start max-[640px]:text-3xl text-5xl"> 
         <h1>projects</h1>
       </div>
