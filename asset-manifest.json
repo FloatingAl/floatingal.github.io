@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.7946a4f3.css",
-    "main.js": "/static/js/main.eba96f14.js",
+    "main.js": "/static/js/main.48d5006d.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/nutrimi_gif.gif": "/static/media/nutrimi_gif.18c0d14264e9a28df581.gif",
     "static/media/quickster_gif.gif": "/static/media/quickster_gif.972e86cb2d0a13f1bad7.gif",
@@ -18,7 +18,7 @@
     "static/media/lion.svg": "/static/media/lion.0af6f8ca85abda20252b6cca68cc99a3.svg",
     "static/media/docker.svg": "/static/media/docker.4b3370139db1f18832b3fc6e77355b42.svg",
     "static/media/mysql.svg": "/static/media/mysql.53293fa5182b3b86dc98e0e8d91af29b.svg",
-    "static/media/canon.svg": "/static/media/canon.cf9cd68ceeace09fda8ccfd9c934c7e2.svg",
+    "static/media/canon.svg": "/static/media/canon.5e75a276ff96bf36b6908afdc8bba914.svg",
     "static/media/c++.svg": "/static/media/c++.fd5fe8daa25cbf814e964841cc75a2eb.svg",
     "static/media/python.svg": "/static/media/python.3ba813aaa1474bccc76f61e89a5002dc.svg",
     "static/media/javascript.svg": "/static/media/javascript.3741053afaa57fc4547d15bcfbd0d2d3.svg",
@@ -26,11 +26,11 @@
     "index.html": "/index.html",
     "static/media/react.svg": "/static/media/react.928f956d9c8ebcffb98a8e917154a81a.svg",
     "main.7946a4f3.css.map": "/static/css/main.7946a4f3.css.map",
-    "main.eba96f14.js.map": "/static/js/main.eba96f14.js.map",
+    "main.48d5006d.js.map": "/static/js/main.48d5006d.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7946a4f3.css",
-    "static/js/main.eba96f14.js"
+    "static/js/main.48d5006d.js"
   ]
 }
