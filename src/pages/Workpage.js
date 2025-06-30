@@ -21,6 +21,7 @@ export default class Workpage extends Component {
     this.cards = [
       {
         id: 1,
+        key: 1,
         company: "Canon U.S.A Inc.",
         duration: "September 2023 - Present",
         title: "Software Engineer II",
@@ -45,6 +46,7 @@ export default class Workpage extends Component {
 
       {
         id: 2,
+        key: 2,
         company: "BAE Systems",
         duration: "January 2022 - September 2023",
         title: "Software Engineer II",
@@ -69,6 +71,7 @@ export default class Workpage extends Component {
 
       {
         id: 3,
+        key: 3,
         company: "Raytheon",
         duration: "May 2019 - December 2021",
         title: "Software Engineer I",
@@ -190,9 +193,6 @@ export default class Workpage extends Component {
   }
 }
 
-/**
- * ==============   Icons   ================
- */
 const iconsProps = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
@@ -251,8 +251,8 @@ const container = {
 
 const button = {
   backgroundColor: "#f70c0c",
-  width: 40,
-  height: 40,
+  width: 35,
+  height: 35,
   borderRadius: "50%",
   display: "flex",
   justifyContent: "center",
