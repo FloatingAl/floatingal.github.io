@@ -16,6 +16,9 @@ import { ReactComponent as MySQLlogo } from '../images/mysql.svg'
 import { ReactComponent as Gitlogo } from '../images/git.svg' 
 import { ReactComponent as IOlogo} from '../images/microchip.svg'
 import { ReactComponent as Clogo} from '../images/c.svg'
+import { ReactComponent as Angularlogo} from '../images/angular.svg'
+import { ReactComponent as TypeScriptlogo} from '../images/typescript.svg'
+import { ReactComponent as BoozAllenlogo} from '../images/booz-allen.svg'
 
 export default class Workpage extends Component {
   constructor(props) {
@@ -24,8 +27,26 @@ export default class Workpage extends Component {
       {
         id: 1,
         key: 1,
+        company: "Booz Allen Hamilton",
+        duration: "August 2025 - Present",
+        title: "Software Engineer II",
+        technologies: {
+          "C++": <Cpluspluslogo/>,
+          Python: <Pythonlogo/>,
+          "TypeScript": <Angularlogo/>,
+          "Angular": <TypeScriptlogo/>
+        },
+        bullets: [
+          "Maintain and extend C++ code in the radar signal processing pipeline; debug real-time data handling issues and tune performance for defense workloads.",
+          "Built an internal workflow assistant for analysts (Python/FastAPI backend, Angular frontend) using Claude and Llama models, handling lookups, report, and file retrieval through a conversational interface.",
+        ],
+        logo: <BoozAllenlogo />,
+      },
+      {
+        id: 2,
+        key: 2,
         company: "Canon U.S.A Inc.",
-        duration: "September 2023 - Present",
+        duration: "September 2023 - June 2025",
         title: "Software Engineer II",
         technologies: {
           "C++": <Cpluspluslogo/>,
@@ -47,8 +68,8 @@ export default class Workpage extends Component {
       },
 
       {
-        id: 2,
-        key: 2,
+        id: 3,
+        key: 3,
         company: "BAE Systems",
         duration: "January 2022 - September 2023",
         title: "Software Engineer II",
@@ -72,8 +93,8 @@ export default class Workpage extends Component {
       },
 
       {
-        id: 3,
-        key: 3,
+        id: 4,
+        key: 4,
         company: "Raytheon",
         duration: "May 2019 - December 2021",
         title: "Software Engineer I",
