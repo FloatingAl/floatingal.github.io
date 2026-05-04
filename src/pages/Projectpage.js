@@ -1,9 +1,6 @@
 import React from 'react'
-import { useState, useRef} from 'react';
 import { motion } from "framer-motion"
 import Projectcard from '../components/Projectcard';
-import CanvasRender from '../components/3drender';
-import { projectdata } from '../data/projectdata'
 
 
 

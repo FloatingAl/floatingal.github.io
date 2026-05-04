@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <BrowserRouter forceRefresh={true}>
+    <BrowserRouter>
     <div className="App">
       <Navbar/>
       <AnimatedRoutes/>

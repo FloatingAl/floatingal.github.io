@@ -7,8 +7,8 @@ function Navbar() {
   return (
     <nav className="flex flex-wrap items-center sticky top-0 justify-between p-4 !z-[999] border-b border-2 border-gray-100 bg-bigwhite ">
         <div className="flex flex-wrap items-center justify-between space-x-5 mx-auto">
-            <a href="" className=" inline-block items-center h-14 w-14 mx-auto">
-              <img src={w_lion}></img>
+            <a href="#about" aria-label="Home" className=" inline-block items-center h-14 w-14 mx-auto">
+              <img src={w_lion} alt="Lion logo" />
             </a>
             <div className="flex flex-wrap items-center justify-between space-x-6 mx-auto">
               <a href="#about" className="block rounded px-2 py-1 hover:text-white hover:bg-bigorange mx-auto">
@@ -20,14 +20,6 @@ function Navbar() {
               <a href="#projects" className="block rounded px-2 py-1 hover:text-white hover:bg-bigorange mx-auto">
                 projects
               </a>
-            </div>
-            <div>
-                <a>
-
-                </a>
-                <a>
-
-                </a>
             </div>
         </div>
     </nav>

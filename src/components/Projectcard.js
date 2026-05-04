@@ -1,5 +1,4 @@
 import React from 'react'
-import quickster from '../images/quickster.png'
 import { projectdata } from '../data/projectdata'
 import { motion } from "framer-motion"
 
@@ -58,8 +57,8 @@ export default function Projectcard() {
               damping: 20,
               staggerChildren: 0.2
             }}>
-                <a id="card" key={projectUrl} href={projectUrl} rel="noreferrer" target="_blank" className='flex m-auto flex-col container justify-end w-97 h-99 bg-black max-[640px]:w-4/5 !z-50 opacity-100 relative shadow-2xl rounded-2xl overflow-hidden'>
-                        <img className= 'w-full h-full object-cover m-auto !z-30 opacity-30 relative' src={projectImg}></img>
+                <a id="card" key={projectUrl} href={projectUrl} rel="noreferrer" target="_blank" aria-label={`View ${projectName} project`} className='flex m-auto flex-col container justify-end w-97 h-99 bg-black max-[640px]:w-4/5 !z-50 opacity-100 relative shadow-2xl rounded-2xl overflow-hidden'>
+                        <img className= 'w-full h-full object-cover m-auto !z-30 opacity-30 relative' src={projectImg} alt={`${projectName} project screenshot`} />
                         <div className='text-left rounded-b-2xl m-auto absolute !z-40 bottom-0 px-4 py-3 w-full'>
                             <h1 className='max-[340px]:text-lg  font-extrabold text-white text-3xl'>{projectName}</h1>
                             <p className='text-cgray max-[340px]:text-xs ' >{projectDes}</p>

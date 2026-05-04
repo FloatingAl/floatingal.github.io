@@ -6,7 +6,6 @@ export default function Card({logo, company, duration, title, technologies, bull
 
   const handleclick = () => {
       setisFlipped(!isFlipped)
-      console.log(isFlipped)
   };
 
   const renderLogo = () => {
@@ -27,8 +26,8 @@ export default function Card({logo, company, duration, title, technologies, bull
   };
 
   const renderBullet = () => {
-    return bullets.map((item,index) => (
-      <li key={Math.random()}>{item}</li>
+    return bullets.map((item, index) => (
+      <li key={index}>{item}</li>
     ));
   };
 

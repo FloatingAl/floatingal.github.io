@@ -13,9 +13,6 @@ body {
   
 }
 
-#workPage, #homePage, #projectPage {
-  zoom: 90%
-}
 
 html { 
   /*background-image: url("./images/confetti-doodles.svg");*/
