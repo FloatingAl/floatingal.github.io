@@ -1,37 +1,39 @@
 {
   "files": {
-    "main.css": "/static/css/main.ff0f1264.css",
-    "main.js": "/static/js/main.82460c5e.js",
+    "main.css": "/static/css/main.68919d04.css",
+    "main.js": "/static/js/main.0434436c.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/nutrimi_gif.gif": "/static/media/nutrimi_gif.18c0d14264e9a28df581.gif",
     "static/media/quickster_gif.gif": "/static/media/quickster_gif.972e86cb2d0a13f1bad7.gif",
-    "static/media/quickster.png": "/static/media/quickster.fe45068e872aeb12fff7.png",
     "static/media/faceprofile.jpg": "/static/media/faceprofile.12dfc887f2e3be410a0e.jpg",
     "static/media/dancing.gif": "/static/media/dancing.32c8bc0ef55652c7fa12.gif",
-    "static/media/albara_mehene_resume.pdf": "/static/media/albara_mehene_resume.bcb6a494add59eb2431f.pdf",
+    "static/media/albara_mehene_resume.pdf": "/static/media/albara_mehene_resume.a62e02014eef29fb0e77.pdf",
     "static/media/raytheon.svg": "/static/media/raytheon.aa2826a55bfe435a1598b56810066c50.svg",
+    "static/media/booz-allen.svg": "/static/media/booz-allen.df95b1885d8f2395277eceeaf0bffd37.svg",
     "static/media/jenkins.svg": "/static/media/jenkins.4d1652041d32528679bef3b0d3d0b41e.svg",
     "static/media/baesystem.svg": "/static/media/baesystem.ce8445486f36e1685227ae49f1d1d64e.svg",
     "static/media/postgresql.svg": "/static/media/postgresql.4407b9a1b8932e9c19d8588c17ba2ab3.svg",
     "static/media/grafana.svg": "/static/media/grafana.7c6c9cf096b1387c3f885e2c6306f006.svg",
     "static/media/lion.svg": "/static/media/lion.0af6f8ca85abda20252b6cca68cc99a3.svg",
+    "static/media/typescript.svg": "/static/media/typescript.c0eb7115ca99c9b18ba0baf90f610f7d.svg",
     "static/media/docker.svg": "/static/media/docker.4b3370139db1f18832b3fc6e77355b42.svg",
     "static/media/mysql.svg": "/static/media/mysql.53293fa5182b3b86dc98e0e8d91af29b.svg",
     "static/media/canon.svg": "/static/media/canon.5e75a276ff96bf36b6908afdc8bba914.svg",
+    "index.html": "/index.html",
     "static/media/c++.svg": "/static/media/c++.fd5fe8daa25cbf814e964841cc75a2eb.svg",
     "static/media/python.svg": "/static/media/python.3ba813aaa1474bccc76f61e89a5002dc.svg",
     "static/media/c.svg": "/static/media/c.5e4bb15c82b0ba8b1b0c1ce7aea97a10.svg",
     "static/media/javascript.svg": "/static/media/javascript.3741053afaa57fc4547d15bcfbd0d2d3.svg",
     "static/media/microchip.svg": "/static/media/microchip.babb92ee657c5f7ef4d3081fc80b9b13.svg",
     "static/media/git.svg": "/static/media/git.5b7d8056929a9373ea84b76dfa5b2483.svg",
-    "index.html": "/index.html",
+    "static/media/angular.svg": "/static/media/angular.00d10ea694079f70b937fd1d5d7afc20.svg",
     "static/media/react.svg": "/static/media/react.928f956d9c8ebcffb98a8e917154a81a.svg",
-    "main.ff0f1264.css.map": "/static/css/main.ff0f1264.css.map",
-    "main.82460c5e.js.map": "/static/js/main.82460c5e.js.map",
+    "main.68919d04.css.map": "/static/css/main.68919d04.css.map",
+    "main.0434436c.js.map": "/static/js/main.0434436c.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff0f1264.css",
-    "static/js/main.82460c5e.js"
+    "static/css/main.68919d04.css",
+    "static/js/main.0434436c.js"
   ]
 }
